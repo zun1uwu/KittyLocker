@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "C:\\Users\\zun1\\Desktop\\KittyLocker\\\\build\\_\\cryptor.h.obj",
+            "outputs": [
+                "C:\\Users\\zun1\\Desktop\\KittyLocker\\build\\_\\vc143.pdb",
+                "C:\\Users\\zun1\\Desktop\\KittyLocker\\\\build\\_\\",
+                "C:\\Users\\zun1\\Desktop\\KittyLocker\\build\\_\\cryptor.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "include\\kitty\\cryptor.h",
+                    "source-path": "c:\\users\\zun1\\desktop\\kittylocker\\cryptor\\include\\kitty\\cryptor.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
