@@ -49,9 +49,6 @@ bool SendPost(std::string remotePath, nlohmann::json json)
 
 	std::string response = Send(request, sock);
 
-	std::cout << request << "\n";
-	std::cout << response << "\n";
-
 	closesocket(sock);
 	WSACleanup();
 

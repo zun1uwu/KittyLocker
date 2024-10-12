@@ -17,3 +17,4 @@ LSTATUS GetMachineGuid(LPSTR guid);
 std::vector<std::string> GetAvailableDrives();
 std::string GetProcessorName();
 bool CheckKillswitch();
+bool AddToAutostart();

